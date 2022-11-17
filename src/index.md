@@ -1,18 +1,12 @@
 ---
 layout: "layouts/homepage.njk"
 hero:
-  subTitle: "WE WORK HARD, WE PLAY HARD"
+  subTitle: "自由自在"
   title:
-    firstPara: "We’re a Design Studio"
-    secondPara: "That Believes In Great Ideas"
-  seeWorkBtn:
-    text: "See Our Works"
-    link: "#project"
-  connectBtn: 
-    text: "Connect with us"
-    link: "contact"
+    firstPara: "˙˚ʚ(っ´ω`c)ɞ˚˙ﾓｶﾓｶ"
+    secondPara: "セトリを簡単コピー"
 
 portfolio:
-  subTitle: "OUR RECENT WORKS"
-  title: "Crafting experiences and seeking to make the complex clear & beautiful."
+  subTitle: "ﾓｶﾓｶについて"
+  title: "本アプリではセトリリストの登録・楽曲の追加・編集・削除・セトリの作成・コピーなど、セトリを簡単にコピーするための機能を提供しております。"
 ---
