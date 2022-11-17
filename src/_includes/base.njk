@@ -37,7 +37,7 @@
     <nav class="navbar navbar-expand-lg site-navigation">
       <div class="container">
         <a class="navbar-brand" href="/">
-          <img src="{{nav.navLogo}}" alt="nav-logo" />
+          ˙˚ʚ(っ´ω`c)ɞ˚˙ﾓｶﾓｶ
         </a>
         <button
           class="navbar-toggler collapsed"
@@ -61,15 +61,6 @@
               {% endif %} 
             </li>
             {% endfor %}
-            <li class="nav-item">
-              <a class="nav-link btn btn-sm btn-primary btn-sm-rounded" href="/{{nav.navBtnLink}}">
-                <span class="btn-area">
-                  <span data-text="{{nav.navBtnText}}">
-                    {{nav.navBtnText}}
-                  </span>
-                </span>
-              </a>
-            </li>
           </ul>
         </div>
       </div>
@@ -80,38 +71,6 @@
     {{content | safe}}
   {% endblock %}
 
-  {% block workTogether %}
-    <section class="site-cta">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center">
-            <h1 class="site-cta-title">{{workTogether.heading}}</h1>
-            <ul class="site-cta-buttons">
-              <li>
-                <a href="/{{workTogether.submitBtn.btnLink}}" class="btn btn-secondary">
-                  <span class="btn-area">
-                    <span data-text="{{workTogether.submitBtn.btnText}}">
-                      {{workTogether.submitBtn.btnText}}
-                    </span>
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a href="/{{workTogether.convBtn.btnLink}}" class="btn btn-primary">
-                  <span class="btn-area">
-                    <span data-text="{{workTogether.convBtn.btnText}}">
-                      {{workTogether.convBtn.btnText}}
-                    </span>
-                  </span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-  {% endblock %}
-
   {% block footer %}
     <footer class="site-footer">
       <div class="container">
@@ -119,13 +78,13 @@
           <div class="col-12">
             <div class="site-footer-logo">
               <a href="/">
-                <img src="{{footer.footerLogo}}" alt="logo-footer">
+                ˙˚ʚ(っ´ω`c)ɞ˚˙ﾓｶﾓｶ
               </a>
             </div>
           </div>
           <div class="col-lg-3 col-md-6">
             <div class="site-footer-widget">
-              <h5 class="site-footer-widget-title">Contact Info</h5>
+              <h5 class="site-footer-widget-title">{{footer.contactsHeading}}</h5>
               <p class="site-footer-widget-description">
               {% for contactInfo in footer.contactsInfo %}
                 <a href="{{contactInfo.link}}">{{contactInfo.text}}</a>
@@ -144,27 +103,6 @@
                  </li> 
                 {% endfor %}
               </ul>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-6">
-            <div class="site-footer-widget">
-              <h5 class="site-footer-widget-title">{{footer.socialHeading}}</h5>
-              <ul class="site-footer-widget-links">
-                {% for socialMedia in footer.socialMedia %}
-                <li><a href="/{{socialMedia.link}}">{{socialMedia.text}}</a></li>
-                {% endfor %}
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="site-footer-widget">
-              <h5 class="site-footer-widget-title">{{footer.brandHeading}}</h5>
-              <p class="site-footer-widget-description">
-              {% for brandMotto in footer.brandMotto %}
-                - {{brandMotto}}
-                <br>
-              {% endfor %}
-              </p>
             </div>
           </div>
           <div class="col-lg-2 col-12">
